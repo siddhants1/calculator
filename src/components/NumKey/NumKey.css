@@ -17,6 +17,6 @@
 @media (max-width: 500px) {
     .num-key {
         min-width: 40px;
-        font-size: 26px;
+        font-size: 20px;
     }
 }

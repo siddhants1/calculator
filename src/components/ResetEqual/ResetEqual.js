@@ -5,11 +5,16 @@ class ResetEqual extends React.Component {
 
     constructor(props) {
         super(props);
+        this.clickHandler = this.clickHandler.bind(this);
+    }
+
+    clickHandler(event) {
+        this.props.resetResultHandler(this.props.value);
     }
 
     render() {
         return(
-            <button className={this.props.styleClass}>{this.props.value}</button>
+            <button className={this.props.styleClass} onClick={this.clickHandler} >{this.props.value}</button>
         );
     }
 }

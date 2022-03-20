@@ -29,7 +29,7 @@
     transform: scale(1.05, 1.05);
 }
 
-@media(max-width: 500) {
+@media(max-width: 500px) {
     .result-btn, .reset-btn {
         font-size: 18px;
     }

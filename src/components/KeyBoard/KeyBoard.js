@@ -5,16 +5,36 @@ import SpecialKey from '../SpecialKey/SpecialKey';
 import ResetEqual from "../ResetEqual/ResetEqual";
 
 class KeyBoard extends Component {
+
+    constructor(props) {
+        super(props);
+        this.numKeyClickHandle = this.numKeyClickHandle.bind(this);
+        this.resetResultProcess = this.resetResultProcess.bind(this);
+        this.delClickHandler = this.delClickHandler.bind(this);
+    }
+    
+    numKeyClickHandle(value) {
+        this.props.onNumTrigger(value);
+    }
+    
+    resetResultProcess(value) {
+        this.props.onResetEqualTrigger(value);
+    }
+
+    delClickHandler() {
+        this.props.onDelClick();
+    }
+
     renderNumKey(i) {
-        return <NumKey value={i} />;
+        return <NumKey value={i} onClickHandler={this.numKeyClickHandle} />;
     }
 
     renderSpecialKey(i) {
-        return <SpecialKey value={i} />;
+        return <SpecialKey value={i} delHandler={this.delClickHandler} />;
     }
 
     renderResetResult(i, j) {
-        return <ResetEqual styleClass={i} value={j} />
+        return <ResetEqual styleClass={i} value={j} resetResultHandler={this.resetResultProcess} />
     }
 
     render() {
