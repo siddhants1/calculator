@@ -1,0 +1,36 @@
+.reset-btn {
+    border: none;
+    font-size: 32px;
+    background-color: hsl(225, 21%, 49%);
+    color: #fff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.reset-btn:hover {
+    cursor: pointer;
+    transition: 0.5s;
+    transform: scale(1.05, 1.05);
+}
+
+.result-btn {
+    border: none;
+    font-size: 32px;
+    background-color: hsl(27, 75%, 60%);
+    color: #fff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.result-btn:hover {
+    cursor: pointer;
+    background-color: hsl(17, 78%, 58%);
+    transition: 0.5s;
+    transform: scale(1.05, 1.05);
+}
+
+@media(max-width: 500) {
+    .result-btn, .reset-btn {
+        font-size: 18px;
+    }
+}

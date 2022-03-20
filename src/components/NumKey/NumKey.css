@@ -1,0 +1,22 @@
+.num-key {
+    border: none;
+    background-color: #fff;
+    color: hsl(221, 14%, 31%);
+    font-size: 32px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    min-width: 80px;
+}
+
+.num-key:hover {
+    cursor: pointer;
+    transition: 0.5s;
+    transform: scale(1.05, 1.05);
+}
+
+@media (max-width: 500px) {
+    .num-key {
+        min-width: 40px;
+        font-size: 26px;
+    }
+}

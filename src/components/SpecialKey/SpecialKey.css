@@ -1,0 +1,25 @@
+.special-key {
+    border: none;
+    background-color: hsl(225, 21%, 49%);
+    color: #fff;
+    font-size: 32px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    min-width: 80px;
+}
+
+.special-key:hover {
+    cursor: pointer;
+    background-color: hsl(224, 28%, 35%);
+    transition: 0.5s;
+    transform: scale(1.05, 1.05);
+}
+
+
+@media (max-width: 500px) {
+    .special-key {
+        min-width: 40px;
+        font-size: 15px;
+        text-align: center;
+    }
+}
